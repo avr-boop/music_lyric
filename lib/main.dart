@@ -143,117 +143,157 @@ class _WeatherState extends State<Weather> {
                       child: Container(
                     color: Colors.white,
                     child: ListView(children: [
-                      ListTile(
-                        leading: FaIcon(
-                          FontAwesomeIcons.music,
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                          leading: FaIcon(
+                            FontAwesomeIcons.music,
+                          ),
+                          title: Text("$lst_songnames_1"),
+                          subtitle: Text("$lst_albumnames_1"),
+                          trailing: Text("$lst_authornames_1"),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/lyrics',
+                                arguments: {'trackid': track_id[0]});
+                          },
                         ),
-                        title: Text("$lst_songnames_1"),
-                        subtitle: Text("$lst_albumnames_1"),
-                        trailing: Text("$lst_authornames_1"),
-                        onTap: () {
-                          Navigator.pushNamed(context, '/lyrics',
-                              arguments: {'trackid': track_id[0]});
-                        },
                       ),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_2"),
-                          subtitle: Text("$lst_albumnames_2"),
-                          trailing: Text("$lst_authornames_2"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[1]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_3"),
-                          subtitle: Text("$lst_albumnames_3"),
-                          trailing: Text("$lst_authornames_3"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[2]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_4"),
-                          subtitle: Text("$lst_albumnames_4"),
-                          trailing: Text("$lst_authornames_4"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[3]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_5"),
-                          subtitle: Text("$lst_albumnames_5"),
-                          trailing: Text("$lst_authornames_5"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[4]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_6"),
-                          subtitle: Text("$lst_albumnames_6"),
-                          trailing: Text("$lst_authornames_6"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[5]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_7"),
-                          subtitle: Text("$lst_albumnames_7"),
-                          trailing: Text("$lst_authornames_7"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[6]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_8"),
-                          subtitle: Text("$lst_albumnames_8"),
-                          trailing: Text("$lst_authornames_8"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[7]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_9"),
-                          subtitle: Text("$lst_albumnames_9"),
-                          trailing: Text("$lst_authornames_9"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[8]});
-                          }),
-                      ListTile(
-                          leading: FaIcon(
-                            FontAwesomeIcons.music,
-                          ),
-                          title: Text("$lst_songnames_10"),
-                          subtitle: Text("$lst_albumnames_10"),
-                          trailing: Text("$lst_authornames_10"),
-                          onTap: () {
-                            Navigator.pushNamed(context, '/lyrics',
-                                arguments: {'trackid': track_id[9]});
-                          }),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_2"),
+                            subtitle: Text("$lst_albumnames_2"),
+                            trailing: Text("$lst_authornames_2"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[1]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_3"),
+                            subtitle: Text("$lst_albumnames_3"),
+                            trailing: Text("$lst_authornames_3"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[2]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_4"),
+                            subtitle: Text("$lst_albumnames_4"),
+                            trailing: Text("$lst_authornames_4"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[3]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_5"),
+                            subtitle: Text("$lst_albumnames_5"),
+                            trailing: Text("$lst_authornames_5"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[4]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_6"),
+                            subtitle: Text("$lst_albumnames_6"),
+                            trailing: Text("$lst_authornames_6"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[5]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_7"),
+                            subtitle: Text("$lst_albumnames_7"),
+                            trailing: Text("$lst_authornames_7"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[6]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_8"),
+                            subtitle: Text("$lst_albumnames_8"),
+                            trailing: Text("$lst_authornames_8"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[7]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_9"),
+                            subtitle: Text("$lst_albumnames_9"),
+                            trailing: Text("$lst_authornames_9"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[8]});
+                            }),
+                      ),
+                      Card(
+                        elevation: 5,
+                        margin: EdgeInsets.all(12),
+                        child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.music,
+                            ),
+                            title: Text("$lst_songnames_10"),
+                            subtitle: Text("$lst_albumnames_10"),
+                            trailing: Text("$lst_authornames_10"),
+                            onTap: () {
+                              Navigator.pushNamed(context, '/lyrics',
+                                  arguments: {'trackid': track_id[9]});
+                            }),
+                      ),
                     ]),
                   ))
                 ]),
